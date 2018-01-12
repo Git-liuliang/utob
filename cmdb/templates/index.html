@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>utob</title>
+</head>
+ {%load staticfiles %}
+
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+<body>
+<nav class="m_nav">
+    <div class="circle nav_con">utob_</div>
+    <div class="nav_con title">
+    <span class="bom_login">Sign in</span>
+    <span style="color: gray">or</span>
+    <span class="bom_regit">Sign up</span>
+    </div>
+</nav>
+    <div>
+        <table class="container-fluid">
+
+                <div id="kernel" class="col-lg-6 col-lg-offset-3">
+
+                    <div class="col-lg-12 tit_name">
+                        <h1><strong>Search</strong> <strong>anyway</strong></h1>
+
+                    </div>
+                    <div class="col-lg-9 col-lg-offset-3" >
+                        <hr class="base">
+                    </div>
+
+                     <div class="input-group input-group-lg ">
+                        <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button href="utable.html" class="btn btn-default" type="button" >Go!</button>
+                            </span>
+                    </div>
+
+                </div>
+
+        </table>
+    </div>
+
+
+<!-- Modal_sign up -->
+<div class="modal " id="Modal_reg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog " role="document">
+    <div class="modal-content m_model">
+      <div class="modal-header">
+        <button type="button" class="close cacel" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">注册</h4>
+      </div>
+
+
+              <form id="reg_form" role="form" action="/reg/" method="post">
+                  <div class="input-group form-out" style="margin-top: 15px">
+                    <span class="input-group-addon form-self" > _邮  箱 </span>
+                      <input id="email" name="email" type="text" class="form-control reg_content" placeholder="email@example.com" aria-describedby="basic-addon1">
+                  </div>
+                     <div class="reg_error" id="email_error"></div>
+                  <div class="input-group form-out">
+                    <span class="input-group-addon form-self">验证码</span>
+                      <input  id="code" name="code" type="text" class="form-control reg_content" >
+                      <span class="input-group-addon form-self sec_code">发送验证码</span>
+                  </div>
+                   <div class="reg_error" id="code_error"></div>
+                  <div class="input-group form-out">
+                    <span class="input-group-addon form-self" >用户名</span>
+                      <input id="username" name="username" type="text" class="form-control reg_content">
+                  </div>
+                   <div class="reg_error" id="username_error"></div>
+                  <div class="input-group form-out">
+                    <span class="input-group-addon form-self" > _密  码 </span>
+                      <input id="password" name="password" type="password" class="form-control reg_content">
+                  </div>
+                   <div class="reg_error" id="pwd_error"></div>
+
+
+
+      <div class="modal-footer">
+        <button  type="button" class="btn btn-default cacel" data-dismiss="modal">取消</button>
+        <button id="reg_submit" type="button" class="btn btn-primary"  >确定</button>
+      </div>
+ </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal_sign in -->
+<div class="modal " id="Modal_login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog " role="document">
+    <div class="modal-content m_model">
+      <div class="modal-header">
+        <button type="button" class="close cacel" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" >登陆</h4>
+      </div>
+
+
+              <form role="form">
+
+                  <div class="input-group form-out">
+                    <span class="input-group-addon form-self" >用户名</span>
+                      <input name="username" type="text" class="form-control">
+                  </div>
+                  <div class="input-group form-out">
+                    <span class="input-group-addon form-self" > _密  码 </span>
+                      <input name="password" type="password" class="form-control">
+                  </div>
+     </form>
+
+
+      <div class="modal-footer">
+        <button  type="button" class="btn btn-default cacel" data-dismiss="modal">取消</button>
+        <button id="conf" type="button" class="btn btn-primary" data-dismiss="modal" >确定</button>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<script src="{% static 'js/jquery-3.2.1.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>

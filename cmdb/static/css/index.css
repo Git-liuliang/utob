@@ -1,0 +1,187 @@
+
+body {
+    background-color: #2b3137;
+}
+
+#kernel {
+    margin-top: 200px;
+    color: white;
+    height: 300px;
+}
+
+.logo {
+    color: #3c763d;
+}
+
+
+.wo_style{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.u_style{
+
+    display: inline-block;
+    height: 30px;
+    line-height: 40px;
+    font-size: large;
+
+}
+
+
+.key {
+    border: none;
+    display: inline-block;
+    height: 30px;
+    line-height: 40px;
+    border-radius: 5px;
+    font-size: large;
+}
+
+.table-pos{
+    margin-top: 20px;
+
+}
+
+.m_nav{
+    color: white;
+    height: 70px;
+    background-color: #24292e;
+    opacity: 0.8;
+}
+
+.circle {
+    line-height: 50px;
+    color: black;
+    padding-top: 0.5%;
+    font-size: 40px;
+    font-weight: bolder;
+    height: 90px;
+    width: 100px;
+    background-color:white;
+    border-radius: 100%;
+    margin-top: 1%;
+    margin-left:  15%;
+}
+
+.sec_code{
+    cursor: pointer;
+
+}
+
+.title{
+    cursor:pointer;
+    font-size: 22px;
+    margin-left: 50%;
+}
+.nav_con{
+    display: inline-block;
+}
+
+.m_model{
+    margin-top: 20%;
+    border-radius: 20px;
+
+    /*background-color: whitesmoke;*/
+    /*position: absolute;*/
+    /*top: 20%;*/
+    /*left: 25%;*/
+    /*height: 500px;*/
+    /*width: 700px;*/
+}
+
+.form-out{
+
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px ;
+    padding-right: 10px;
+}
+.reg_error{
+    height: 30px;
+    color: indianred;
+    padding-top: 5px;
+    padding-left: 50px;
+}
+
+.disable{
+    disabled:disabled
+}
+
+.form-self{
+    text-align: center;
+
+}
+
+.border_color_red{
+    border: solid 1px brown;
+}
+
+.border_color_green{
+    border: solid 1px lawngreen;
+}
+
+.tit_name{
+
+        -webkit-animation-name: fadeIn ;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: 1; /* 动画只播放一次 */
+}
+
+
+.base {
+
+        -webkit-animation-name: fadeout ;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: 1; /* 动画只播放一次 */
+
+    margin-top: 5px;
+
+    color: white;
+    size: 6px;
+}
+
+@-webkit-keyframes fadeIn {
+0% {
+opacity: 0; /*初始状态 透明度为0*/
+    transform: translateX(80px);
+}
+50% {
+opacity: 0.5; /*中间状态 透明度为0*/
+    transform: translateX(40px);
+}
+100% {
+opacity: 1; /*结尾状态 透明度为1*/
+    transform: translateX(0px);
+}
+}
+
+@-webkit-keyframes fadeout {
+0% {
+opacity: 0.1; /*初始状态 透明度为0*/
+    transform: translateX(0px);
+}
+50% {
+opacity: 0.5; /*中间状态 透明度为0*/
+    transform: translateX(40px);
+}
+100% {
+opacity: 1; /*结尾状态 透明度为1*/
+    transform: translateX(90px);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
